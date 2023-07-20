@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Practice</title>
+    <script src="file1.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <p>Enter 1 for BMI Calculator</p>
+        <p>Enter 2 to Check if number Palindrome</p>
+        <p>Enter 3 to Generate Username </p>
+        <input  id="text" />
+
+        <button id="btn" onclick="myFunction()" style="margin: 01cm;">Enter</button>
+
+        <script>
+            function myFunction() {
+                var input1 = document.getElementById("text").value
+
+                switch (input1) {
+                    case "1":
+                        window.open("./bmi.html");
+                        break;
+                    case "2":
+                        window.open("./palindrome.html", "_blank");
+                        break;
+                    case "3": 
+                        window.open("./username.html", "_blank");
+                        break;
+                    default:
+                        alert("Enter a valid output")
+                }
+            }
+        </script>
+</body>
+</html>
